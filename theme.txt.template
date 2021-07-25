@@ -1,6 +1,10 @@
 # If this file is called theme.txt then the theme template has been
 # already parsed and the comments below could not make too much sense.
 
+# If you'd like to make additional tweaks, see the documentation on the
+# formatting at
+# https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html
+
 # theme.txt.template represents a python string that gets format()-ed
 # Note: for escaping literal curly braces, double them like so: {{ or }}
 
@@ -8,7 +12,9 @@
 # Designed for any resolution
 
 # Global Property
-title-text: ""
+title-text: "{hostname}"
+title-font: "{fontname}"
+title-color: "{highlight}"
 # desktop-image: "{image_name}"
 desktop-color: "{background}"
 terminal-font: "Unifont Regular 16" # A smaller font for the console
@@ -21,9 +27,9 @@ terminal-border: "0"
 
 # Show the boot menu
 + boot_menu {{
-  left = 36%
+  left = 20%
   top = 29%
-  width = 28%
+  width = 70%
   height = 60%
   item_font = "{fontname}"
   item_color = "{foreground}"

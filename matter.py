@@ -5,6 +5,7 @@ import sys
 import os
 import re
 import json
+from socket import gethostname
 import argparse
 import urllib.request as request
 from urllib.error import HTTPError, URLError
@@ -376,6 +377,7 @@ def prepare_source_dir():
         "background": background,
         "image_name": image_name,
         "fontname": fontname,
+        "hostname": gethostname()
     }
     parsed_theme = template.format(**context)
 

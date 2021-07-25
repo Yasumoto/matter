@@ -8,10 +8,12 @@
 # Designed for any resolution
 
 # Global Property
-title-text: ""
+title-text: "stormtrooper"
+title-font: "Rye Regular 32"
+title-color: "#ef233c"
 # desktop-image: "background.png"
-desktop-color: "#263238"
-terminal-font: "default" # a random name to let the default font for the console
+desktop-color: "#073b4c"
+terminal-font: "Unifont Regular 16" # A smaller font for the console
 terminal-box: "terminal_box_*.png"
 terminal-left: "0"
 terminal-top: "0"
@@ -21,13 +23,13 @@ terminal-border: "0"
 
 # Show the boot menu
 + boot_menu {
-  left = 36%
+  left = 20%
   top = 29%
-  width = 28%
+  width = 70%
   height = 60%
-  item_font = "Google Sans Regular 32"
-  item_color = "#ffffff"
-  selected_item_color = "#e91e63"
+  item_font = "Rye Regular 32"
+  item_color = "#ffd166"
+  selected_item_color = "#ef233c"
   icon_width = 72
   icon_height = 72
   item_height = 72
@@ -43,6 +45,6 @@ terminal-border: "0"
   align = "center"
   id = "__timeout__"
   text = "Booting in %d seconds"
-  color = "#ffffff"
-  font = "Google Sans Regular 32"
+  color = "#ffd166"
+  font = "Rye Regular 32"
 }

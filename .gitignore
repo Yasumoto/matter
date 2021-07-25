@@ -4,3 +4,4 @@ Matter/font.pf2
 icons/*.svg
 fonts/*.ttf
 __pycache__
+/config.json
